@@ -1,7 +1,7 @@
 <html>
 <head>
-<title>������ʂƂ��悭�킩��Ȃ��l�̂��߂́A���ӂ�git���� �`github for Windows�`</title>
-<meta charset="Shift_JIS" />
+<title>黒い画面とかよくわからない人のための、ゆるふわgit入門 〜github for Windows〜</title>
+<meta charset="UTF-8" />
 </head>
 <body>
 <style>
@@ -40,228 +40,228 @@ ul{list-style:disc;list-style-position:inside;margin-left:1.5em;}
 </style>
 <div id="social">
 	<div class="socialb"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fchocolatina.github.com%2Fgithub-for-windows-tutorial%2F&amp;send=false&amp;layout=button_count&amp;width=130&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe></div>
-	<div class="socialb"><a href="http://b.hatena.ne.jp/entry/http://chocolatina.github.com/github-for-windows-tutorial/" class="hatena-bookmark-button" data-hatena-bookmark-title="������ʂƂ��悭�킩��Ȃ��l�̂��߂́A���ӂ�git���� �`github for Windows�`" data-hatena-bookmark-layout="standard" title="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="���̃G���g���[���͂Ăȃu�b�N�}�[�N�ɒǉ�" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+	<div class="socialb"><a href="http://b.hatena.ne.jp/entry/http://chocolatina.github.com/github-for-windows-tutorial/" class="hatena-bookmark-button" data-hatena-bookmark-title="黒い画面とかよくわからない人のための、ゆるふわgit入門 〜github for Windows〜" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
 	<br clear="all">
 </div>
-<h1>������ʂƂ��悭�킩��Ȃ��l�̂��߂́A���ӂ�git���� �`github for Windows�`</h1>
+<h1>黒い画面とかよくわからない人のための、ゆるふわgit入門 〜github for Windows〜</h1>
 <p class="box05">by SHOKO OYAMADA (<a href="http://twitter.com/chocolatina" target="_blank">chocolatina</a>) @ paperboy&co.<span>{</span></p>
 <div class="box">
-	<h2>���̎����̑Ώ�</h2>
+	<h2>この資料の対象</h2>
 	<ul>
-		<li>Subversion���g�������Ƃ�����l</li>
-		<li>Git�Ƃ��悭�킩��Ȃ��l</li>
-		<li>�ł�github�̃A�J�E���g�͎����Ă�l</li>
-		<li>Windows���[�U�[�̃f�U�C�i�[</li>
+		<li>Subversionを使ったことがある人</li>
+		<li>Gitとかよくわからない人</li>
+		<li>でもgithubのアカウントは持ってる人</li>
+		<li>Windowsユーザーのデザイナー</li>
 	</ul>
 </div>
 <div class="box">
-	<h2>git�Ƃ́H</h2>
-	<p>SVN�̂悤�ȃo�[�W�����Ǘ��V�X�e���̂��܂ǂ��̂��<br />
-		�g����ƃ��e��炵���B���ǃ��e���o�����Ȃ��B<br />
-		SVN�Ƃ̓��|�W�g���̎������Ȃǂ�������ƈႤ<br />
-		�ʂɃv���O��������Ȃ��Ă������ȍX�V�������Ǘ����Ă悢�B</p>
+	<h2>gitとは？</h2>
+	<p>SVNのようなバージョン管理システムのいまどきのやつ<br />
+		使えるとモテるらしい。けどモテた覚えがない。<br />
+		SVNとはリポジトリの持ち方などがちょっと違う<br />
+		別にプログラムじゃなくてもいろんな更新履歴を管理してよい。</p>
 </div>
 <div class="box">
-	<h2>�o�[�W�����Ǘ��Ƃ́H</h2>
-	<p>�X�V�����⍷�����������Ȃ��悤�ɁA<br />
-		�݂�Ȃ����ǂ��J���ł���悤�Ɏg���Ă���@�\�B<br />
-		���ł����ۂ͍�������������܂��ˁB</p>
+	<h2>バージョン管理とは？</h2>
+	<p>更新履歴や差分が混乱しないように、<br />
+		みんなが仲良く開発できるように使っている機能。<br />
+		※でも実際は混乱したりもしますね。</p>
 </div>
 <div class="box">
-	<h2>���|�W�g���Ƃ́H</h2>
-	<p>�X�V���������߂Ă����ꏊ�ł��B<br />
-		git�ł́A���|�W�g���ɂ�2��ނ���܂��B<br />
-		�u�����̍�Ɨp���|�W�g���v��<br />
-		�u���J�p���|�W�g���v�ł��B</p>
-	<p>�����́A<br />
-		������PC���̃t�H���_�������̍�Ɨp���|�W�g��<br />
-		github�����J�p���|�W�g��<br />
-		�Ƃ��Ęb�����܂��B</p>
+	<h2>リポジトリとは？</h2>
+	<p>更新履歴をためておく場所です。<br />
+		gitでは、リポジトリには2種類あります。<br />
+		「自分の作業用リポジトリ」と<br />
+		「公開用リポジトリ」です。</p>
+	<p>今日は、<br />
+		自分のPC内のフォルダ＝自分の作業用リポジトリ<br />
+		github＝公開用リポジトリ<br />
+		として話をします。</p>
 </div>
 <div class="box">
-	<h2>github�Ƃ́H</h2>
-	<p>git�ŊǗ������X�V������u���Ă����ꏊ�B<br />
-		�����������̂�������񂶂�Ȃ��A<br />
-		�J���r���̗�����������B<br />
-		���i�����Ȃ������̃\�[�X�R�[�h��������B<br />
-		���������傱���傱�����̂ŁA�J�����Ă�I�����o����̂ŃG���W�j�A�ɐl�C�B<br />
-		�l�̃\�[�X�R�[�h�Ɏ�����đ���������ł���炵���B<br />
-		�ʂɃv���O��������Ȃ��Ă������ȍX�V�������Ǘ����Ă悢�B<br />
-		�ł��������L�Ƃ����Ǘ�����̂͂�߂܂��傤�B</p>
+	<h2>githubとは？</h2>
+	<p>gitで管理した更新履歴を置いておく場所。<br />
+		完成したものを見せるんじゃなく、<br />
+		開発途中の履歴を見せる。<br />
+		普段見えない裏側のソースコードも見える。<br />
+		履歴をちょこちょこ送れるので、開発してる！感が出せるのでエンジニアに人気。<br />
+		人のソースコードに手を入れて送ったりもできるらしい。<br />
+		別にプログラムじゃなくてもいろんな更新履歴を管理してよい。<br />
+		でも交換日記とかを管理するのはやめましょう。</p>
 </div>
 <div class="box">
-	<h2>�����̖ڕW</h2>
-	<p>������PC���̃t�H���_�ɒu�����T�C�g��<br />
-		git�Ńo�[�W�����Ǘ�����<br />
-		github��publish����<br />
-		���e�悤<br />
-		�����e�邩�ǂ����͕�����Ȃ�</p>
+	<h2>今日の目標</h2>
+	<p>自分のPC内のフォルダに置いたサイトを<br />
+		gitでバージョン管理して<br />
+		githubにpublishして<br />
+		モテよう<br />
+		※モテるかどうかは分からない</p>
 	<p><img src="img/img01.gif" alt=""></p>
 </div>
 <div class="box">
-	<h2>����</h2>
+	<h2>流れ</h2>
 	<ol class="box04">
-		<li><a href="#flow00">�K�v�Ȃ��̂�p�ӂ��悤</a></li>
-		<li><a href="#flow01">github for Windows���C���X�g�[�����悤</a></li>
-		<li><a href="#flow02">�R�~�b�g����github��publish���悤</a></li>
-		<li><a href="#flow03">�����X�V������A�܂��R�~�b�g����publish���Ă݂悤</a></li>
+		<li><a href="#flow00">必要なものを用意しよう</a></li>
+		<li><a href="#flow01">github for Windowsをインストールしよう</a></li>
+		<li><a href="#flow02">コミットしてgithubにpublishしよう</a></li>
+		<li><a href="#flow03">何か更新したら、またコミットしてpublishしてみよう</a></li>
 	</ol>
 	<ol>
 		<li class="box03" id="flow00">
-			<h3>�K�v�Ȃ��̂�p�ӂ��悤</h3>
+			<h3>必要なものを用意しよう</h3>
 			<ol class="box03">
 				<li>
-					<p><a href="https://github.com/" target="_blank">github</a>�ŃA�J�E���g���쐬���Ă��������B<br>
-						�܂��͖����v�����ő��v�ł��B</p>
+					<p><a href="https://github.com/" target="_blank">github</a>でアカウントを作成してください。<br>
+						まずは無料プランで大丈夫です。</p>
 					<p><img src="img/e7a638fa7fe11a2898607cf9cee75edd.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�����̃p�\�R�����ɁAgit�Ǘ��������t�H���_�����܂��B<br>
-						�����ł́uchcltntest�v�Ƃ����t�H���_���ɂ��܂��B</p>
+					<p>自分のパソコン内に、git管理したいフォルダを作ります。<br>
+						ここでは「chcltntest」というフォルダ名にします。</p>
 					<p><img src="img/f2d66bcf7070628f732c6a7198a7a102.png" alt="" /></p>
 				</li>
 			</ol>
 		</li>
 		<li class="box03" id="flow01">
-			<h3>github for Windows���C���X�g�[�����悤</h3>
+			<h3>github for Windowsをインストールしよう</h3>
 			<ol class="box03">
 				<li>
-					<p><a href="https://github.com/" target="_blank">github</a>�ŁA�C���X�g�[���t�@�C�����_�E�����[�h���܂��B</p>
+					<p><a href="https://github.com/" target="_blank">github</a>で、インストールファイルをダウンロードします。</p>
 					<p><img src="img/8c7a16ece6e31f19590254049a0dc91c.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�C���X�g�[����i�߂܂��B</p>
+					<p>インストールを進めます。</p>
 					<p><img src="img/da3b6fb26bbc56b6ffd39530267025ce.png" alt="" /></p>
 				</li>
 				<li>
-					<p>Accept���܂��B</p>
+					<p>Acceptします。</p>
 					<p><img src="img/61040b3ca96365edf25172998a63d67f.png" alt="" /></p>
 				</li>
 				<li>
-					<p>������Ǝ��Ԃ�������̂ŁA�����ł����đ҂��܂��B</p>
+					<p>ちょっと時間がかかるので、お茶でもして待ちます。</p>
 					<p><img src="img/cb605619a8c2147b11db6136ba44f4f2.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�ċN�����K�v�Ȃ̂ŁAYes���܂��B</p>
+					<p>再起動が必要なので、Yesします。</p>
 					<p><img src="img/1872bfb973f16c9b0c3282a015beeea0.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�ċN������Ƃ���ȉ�ʂɂȂ�܂��BInstall�������܂��B</p>
+					<p>再起動するとこんな画面になります。Installを押します。</p>
 					<p><img src="img/15303817c75b644a0a7e0d052c0ca352.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�L���撣��̂ł��΂����҂����������B</p>
+					<p>猫が頑張るのでしばしお待ちください。</p>
 					<p><img src="img/6aa86879866b1e64c03b4b981c8d4afd.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�C���X�g�[�����������܂����Bgithub�̃A�J�E���g�ƃp�X���[�h�Ń��O�C�����܂��B</p>
+					<p>インストールが完了しました。githubのアカウントとパスワードでログインします。</p>
 					<p><img src="img/9075021e22cc6a1839c6a85743de2f1c.png" alt="" /></p>
 				</li>
 				<li>
-					<p>���O�ƃ��[���A�h���X����͂��܂��B</p>
+					<p>名前とメールアドレスを入力します。</p>
 					<p><img src="img/412de64492ec822f43cbfbcd1df41026.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�܂����|�W�g��������܂����ƌ����܂��B<br>
-						�udashboard�v���N���b�N���܂��B</p>
+					<p>まだリポジトリがありませんよと言われます。<br>
+						「dashboard」をクリックします。</p>
 					<p><img src="img/04bd7d23732344050903e4dec1f8b9f6.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�V�������|�W�g�������܂����H�ƕ�����܂��B<br>
-						�V�����̂���肽���̂ŁAcreate one���N���b�N���܂��B</p>
+					<p>新しくリポジトリを作りますか？と聞かれます。<br>
+						新しいのを作りたいので、create oneをクリックします。</p>
 					<p><img src="img/4884e4ff0e735705315a703016fab2c7.png" alt="" /></p>
 				</li>
 				<li>
-					<p>���|�W�g�����ƁAgit�Ǘ��������t�H���_�̏ꏊ�uC:\chcltntest�v����͂��܂��B<br>
-						���|�W�g�����͍D���Ȃ��̂ő��v�ł����A�t�H���_���ƈꏏ���ƕ�����₷���ł��B<br>
-						���͂�����CREATE�������܂��B</p>
+					<p>リポジトリ名と、git管理したいフォルダの場所「C:\chcltntest」を入力します。<br>
+						リポジトリ名は好きなもので大丈夫ですが、フォルダ名と一緒だと分かりやすいです。<br>
+						入力したらCREATEを押します。</p>
 					<p><img src="img/ab9b94c1d39ffaa313a9f361d650be1f.png" alt="" /></p>
 				</li>
 				<li>
-					<p>���߂łƂ��I���|�W�g�����o���܂����B</p>
+					<p>おめでとう！リポジトリが出来ました。</p>
 					<p><img src="img/b19c7061b879317b66df46964a28673a.png" alt="" /></p>
 				</li>
 			</ol>
 		</li>
 		<li class="box03" id="flow02">
-			<h3>�R�~�b�g����github��publish���悤</h3>
+			<h3>コミットしてgithubにpublishしよう</h3>
 			<ol class="box03">
 				<li>
-					<p>���ď����������N���b�N����ƁA���|�W�g���̒��������܂��B</p>
+					<p>青くて小さい矢印をクリックすると、リポジトリの中が見られます。</p>
 					<p><img src="img/1d51f59b9f419bdc4f616fd8d4f2f492.png" alt="" /></p>
 				</li>
 				<li>
-					<p>���|�W�g���͏o���܂������A�܂���x���R�~�b�g���Ă��Ȃ��̂ŁA<br>
-						�����ŃR�~�b�g���Ă����܂��B<br>
-						�R�~�b�g���b�Z�[�W����͂��āu�R�~�b�g�v�{�^���������܂��B</p>
+					<p>リポジトリは出来ましたが、まだ一度もコミットしていないので、<br>
+						ここでコミットしてあげます。<br>
+						コミットメッセージを入力して「コミット」ボタンを押します。</p>
 					<p><img src="img/14584f5bcf5fb52b8af6c27ce475ba2c.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�R�~�b�g�ł��܂����I���߂łƂ��I</p>
+					<p>コミットできました！おめでとう！</p>
 					<p><img src="img/345e3788441f84055e6be6ada5d4a8c4.png" alt="" /></p>
 				</li>
 			</ol>
 		</li>
 		<li class="box03" id="flow03">
-			<h3>�����X�V������A�܂��R�~�b�g����publish���Ă݂悤</h3>
+			<h3>何か更新したら、またコミットしてpublishしてみよう</h3>
 			<ol class="box03">
 				<li>
-					<p>���߂��ɉ����A�����̍D���Ȃ��̂��Agit�Ǘ����Ă���t�H���_�̒��ɒu���Ă݂܂��傤�B<br>
-						�����ł�index.html��u���܂��B</p>
+					<p>ためしに何か、自分の好きなものを、git管理しているフォルダの中に置いてみましょう。<br>
+						ここではindex.htmlを置きます。</p>
 					<p><img src="img/22f9317569902064d3ec683322bd3dc3.png" alt="" /></p>
 				</li>
 				<li>
-					<p>��������Ƃ����A��ʂɁuuncomitted changes�v�Əo�܂��B<br>
-						�܂��R�~�b�g���ĂȂ��ύX������܂���[�A�Ƃ������Ƃł��B<br>
-						�ڂ����������̂�SHOW�������܂��B</p>
+					<p>そうするとすぐ、画面に「uncomitted changes」と出ます。<br>
+						まだコミットしてない変更がありますよー、ということです。<br>
+						詳しく見たいのでSHOWを押します。</p>
 					<p><img src="img/e8cc3c7ab9bd50801dac6a8669fc3e38.png" alt="" /></p>
 				</li>
 				<li>
-					<p>��قǂƓ����悤�ɃR�~�b�g���b�Z�[�W����͂��ăR�~�b�g���܂��傤�B</p>
+					<p>先ほどと同じようにコミットメッセージを入力してコミットしましょう。</p>
 					<p><img src="img/255b40aed63b7caa4da634a85a515c0d.png" alt="" /></p>
 				</li>
 				<li>
-					<p>���āA�R�~�b�g���b�Z�[�W�����܂��Ă��܂����B<br>
-						���낻��݂�Ȃɂ��̕ύX���������������B<br>
-						�킽���A�d�����Ă�I�����o�������B����ȋC�����ł����ς��ł��B</p>
+					<p>さて、コミットメッセージが溜まってきました。<br>
+						そろそろみんなにこの変更履歴を見せたい。<br>
+						わたし、仕事してる！感を出したい。そんな気持ちでいっぱいです。</p>
 					<p><img src="img/e2a0296a019809d4550c9bfd75a096ff.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�݂�Ȃɂ��̕ύX������������ɂ́Agithub�̃T�[�o�[�ɑ���K�v������܂��B<br>
-						publish�������܂��傤�B</p>
+					<p>みんなにこの変更履歴を見せるには、githubのサーバーに送る必要があります。<br>
+						publishを押しましょう。</p>
 					<p><img src="img/89e92c4752848d26cf0c656b3d37e0e5.png" alt="" /></p>
 				</li>
 				<li>
-					<p>in sync�ƌ���ꂽ��Apublish�����ł��B</p>
+					<p>in syncと言われたら、publish完了です。</p>
 					<p><img src="img/f491540887799fe74226b90ff5c7b8da.png" alt="" /></p>
 				</li>
 				<li>
-					<p>https://github.com/���[�U�[��/���|�W�g����<br>
-						�ɃA�N�Z�X����ƁAgithub�T�[�o�[�ɑ���ꂽ�ύX�������m�F�ł��܂��B<br>
-						����Ŋ����ł��B</p>
+					<p>https://github.com/ユーザー名/リポジトリ名<br>
+						にアクセスすると、githubサーバーに送られた変更履歴を確認できます。<br>
+						これで完了です。</p>
 					<p><img src="img/6f5b0f6198b6a63905da71885ddd7c97.png" alt="" /></p>
 				</li>
 				<li>
-					<p>�܂������A�t�@�C���ɕύX����������A�R�~�b�g���āA<br>
-						�R�~�b�g���b�Z�[�W�����܂�����L���̂����Ƃ����publish�A<br>
-						�Ƃ������ɐi�߂܂��傤�B<br>
-						���߂łƂ��I</p>
+					<p>また何か、ファイルに変更があったら、コミットして、<br>
+						コミットメッセージが溜まったらキリのいいところでpublish、<br>
+						という風に進めましょう。<br>
+						おめでとう！</p>
 				</li>
 			</ol>
 		</li>
 	</ol>
 </div>
 <div class="box">
-	<h2>�����̂܂Ƃ�</h2>
-	<p>github for Windows���C���X�g�[������B<br>
-		���ꂪ�I�������R�~�b�g����publish���J��Ԃ��A����ȗ���B<br>
-		�����l�ŊJ������Ƃ��́A����pull��branch�Ȃǂ��g���č�Ƃ��܂��B</p>
+	<h2>今日のまとめ</h2>
+	<p>github for Windowsをインストールする。<br>
+		それが終わったらコミットしてpublishを繰り返す、が主な流れ。<br>
+		複数人で開発するときは、他にpullやbranchなどを使って作業します。</p>
 </div>
 <div class="box">
-	<h2>���܂�</h2>
+	<h2>おまけ</h2>
 	<ul>
-		<li><a href="http://www.slideshare.net/to_ueda/git-6821390" target="_blank">�P�T���ł킩��Git����</a></li>
-		<li><a href="http://blog.asial.co.jp/894" target="_blank">�C���X�g�ł킩��Igit����̓���</a></li>
+		<li><a href="http://www.slideshare.net/to_ueda/git-6821390" target="_blank">１５分でわかるGit入門</a></li>
+		<li><a href="http://blog.asial.co.jp/894" target="_blank">イラストでわかる！git入門の入門</a></li>
 	</ul>
 </div>
 <p class="box05">by SHOKO OYAMADA (<a href="http://twitter.com/chocolatina" target="_blank">chocolatina</a>) @ paperboy&co.<span>{</span></p>
